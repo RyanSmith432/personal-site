@@ -15,7 +15,7 @@ import {
 const PROJECTS_URL = `${SITE_URL}/projects/`;
 
 const PROJECTS_DESCRIPTION =
-  "Early projects and experiments from Michael D'Angelo (2015 and earlier).";
+  "Early projects and experiments from Ryan Smith (2015 and earlier).";
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Archive',
@@ -47,13 +47,13 @@ export default function ProjectsPage() {
         <header className="projects-header">
           <h1 className="page-title">Archive</h1>
           <p className="page-subtitle">
-            Early projects and experiments from my student years
+            Early projects and experiments
           </p>
         </header>
 
         {featuredProjects.length > 0 && (
           <section className="projects-featured">
-            <h2 className="projects-section-title">Hackathons &amp; Awards</h2>
+            <h2 className="projects-section-title">Projects &amp; Documentation</h2>
             <div className="projects-grid projects-grid--featured">
               {featuredProjects.map((project) => (
                 <Cell data={project} key={project.title} />
