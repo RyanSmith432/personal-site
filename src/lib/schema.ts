@@ -1,5 +1,8 @@
 import contact from '@/data/contact';
-import degrees from '@/data/resume/degrees';
+
+// FIX THIS LINE BASED ON YOUR ACTUAL FILE NAME:
+import { educationAndCerts } from '@/data/resume/educationAndCerts';  
+
 import work from '@/data/resume/work';
 import type { Post } from '@/lib/posts';
 import {
@@ -12,16 +15,6 @@ import {
 
 export { SITE_URL } from '@/lib/utils';
 
-/**
- * Centralised JSON-LD (schema.org) graph builders.
- *
- * Every node carries a stable `@id` so crawlers can merge the same entity
- * across pages (e.g. the homepage Person and a blog post's author resolve to
- * one knowledge-graph node). Pages compose these builders into a single
- * `@graph` document via {@link buildGraph}.
- */
-
-// Stable node identifiers, referenced across pages.
 export const PERSON_ID = `${SITE_URL}/#person`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const BLOG_ID = `${SITE_URL}/writing/#blog`;
@@ -30,7 +23,6 @@ export const SITE_LANGUAGE = 'en-US';
 export const SITE_IMAGE = `${SITE_URL}${SITE_IMAGE_PATH}`;
 export const HOME_URL = `${SITE_URL}/`;
 
-// Shared so the /writing metadata and the Blog node stay in sync.
 export const WRITING_DESCRIPTION =
   'Articles on AI security, LLM red teaming, and trust & safety.';
 
@@ -41,20 +33,10 @@ interface Crumb {
   url: string;
 }
 
-/** Reference to the canonical Person node. */
 export const personRef = () => ({ '@id': PERSON_ID });
-
-/** Reference to the canonical WebSite node. */
 export const websiteRef = () => ({ '@id': WEBSITE_ID });
-
-/** Reference to the canonical Blog node. */
 export const blogRef = () => ({ '@id': BLOG_ID });
 
-/**
- * The canonical Person entity. Emitted site-wide so every page anchors to the
- * same node; other nodes reference it via {@link personRef} instead of
- * repeating its properties.
- */
 export function personNode(): SchemaNode {
   const socialLinks = contact
     .filter((item) => !item.link.startsWith('mailto:'))
@@ -92,18 +74,17 @@ export function personNode(): SchemaNode {
       name: currentJob.name,
       url: currentJob.url,
     },
-    alumniOf: degrees.map((degree) => ({
-      '@type': 'CollegeOrUniversity',
-      name: degree.school,
-      url: degree.link,
-    })),
+
+    alumniOf: educationAndCerts
+      .filter((item) => item.year)
+      .map((degree) => ({
+        '@type': 'CollegeOrUniversity',
+        name: degree.subtitle,
+        url: degree.link,
+      })),
   };
 }
 
-/**
- * The canonical WebSite entity. Tells crawlers how to name the site in search
- * results. Emitted site-wide alongside {@link personNode}.
- */
 export function websiteNode(): SchemaNode {
   return {
     '@type': 'WebSite',
@@ -125,10 +106,6 @@ export function websiteNode(): SchemaNode {
   };
 }
 
-/**
- * A BreadcrumbList for a page. `crumbs` should describe the categorisation path
- * ending at the current page. The node id is anchored to the page url.
- */
 export function breadcrumbNode(pageUrl: string, crumbs: Crumb[]): SchemaNode {
   return {
     '@type': 'BreadcrumbList',
@@ -146,7 +123,6 @@ interface PageNodeOptions {
   url: string;
   name: string;
   description?: string;
-  /** Attaches a `breadcrumb` reference (the BreadcrumbList must also be emitted). */
   hasBreadcrumb?: boolean;
 }
 
@@ -166,7 +142,6 @@ function baseWebPage(
   };
 }
 
-/** A WebPage subtype describing a page about a person (e.g. home, about). */
 export function profilePageNode(options: PageNodeOptions): SchemaNode {
   return {
     ...baseWebPage('ProfilePage', options),
@@ -174,7 +149,6 @@ export function profilePageNode(options: PageNodeOptions): SchemaNode {
   };
 }
 
-/** A WebPage subtype for pages that primarily list things (e.g. writing, archive). */
 export function collectionPageNode(options: PageNodeOptions): SchemaNode {
   return {
     ...baseWebPage('CollectionPage', options),
@@ -182,15 +156,10 @@ export function collectionPageNode(options: PageNodeOptions): SchemaNode {
   };
 }
 
-/** A plain WebPage, used for individual article pages. */
 export function webPageNode(options: PageNodeOptions): SchemaNode {
   return baseWebPage('WebPage', options);
 }
 
-/**
- * The Blog node — a stepping stone between the WebSite and individual posts.
- * Belongs on the blog index page.
- */
 export function blogNode(dateModified?: string): SchemaNode {
   return {
     '@type': 'Blog',
@@ -205,7 +174,6 @@ export function blogNode(dateModified?: string): SchemaNode {
   };
 }
 
-/** A BlogPosting for an individual post. */
 export function blogPostingNode(post: Post): SchemaNode {
   const url = `${SITE_URL}/writing/${post.slug}/`;
 
@@ -232,7 +200,6 @@ export function blogPostingNode(post: Post): SchemaNode {
   };
 }
 
-/** Wraps nodes into a single `@graph` JSON-LD document. */
 export function buildGraph(nodes: SchemaNode[]): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',

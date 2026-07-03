@@ -173,3 +173,113 @@
   border-top: none;
   padding-top: 0;
 }
+
+/* ========================================
+   Education & Certifications Card Layout
+   ======================================== */
+
+.resume-page .education-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 736px) {
+  .resume-page .education-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.resume-page .education-card {
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-alt);
+  box-shadow: var(--shadow-sm);
+  border-top: 3px solid var(--color-accent);
+  border-bottom: 3px solid var(--color-accent);
+
+  transition:
+    transform var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out),
+    filter var(--duration-fast) var(--ease-out);
+}
+
+.resume-page .education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  background: var(--color-bg);
+  filter: brightness(1.05);
+}
+
+.resume-page .education-title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.25rem;
+}
+
+.resume-page .education-subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-fg-light);
+}
+
+.resume-page .education-year {
+  font-size: var(--text-sm);
+  color: var(--color-fg-light);
+  margin-top: 0.25rem;
+}
+
+.resume-page .education-image {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin-top: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========================================
+   YouTube Thumbnail Cards (About Page)
+   ======================================== */
+
+.about-page .youtube-thumb {
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-alt);
+  box-shadow: var(--shadow-sm);
+  border-top: 3px solid var(--color-accent);
+  border-bottom: 3px solid var(--color-accent);
+
+  /* Magnetic hover transition curve */
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out),
+    filter var(--duration-fast) var(--ease-out);
+}
+
+/* Magnetic hover effect */
+.about-page .youtube-thumb:hover {
+  transform: translateY(-6px) scale(1.06) rotate3d(1, 1, 0, 2deg);
+  box-shadow: var(--shadow-lg);
+  background: var(--color-bg);
+  filter: brightness(1.08);
+}
+
+/* Image zoom on hover */
+.about-page .youtube-thumb img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about-page .youtube-thumb:hover img {
+  transform: scale(1.03);
+}

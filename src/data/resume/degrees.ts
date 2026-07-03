@@ -1,17 +1,10 @@
-export interface Degree {
-  school: string;
-  degree: string;
-  link: string;
-  year: string;
-}
+import type { EducationItem } from './education';
 
-const degrees: Degree[] = [
+export const degrees: EducationItem[] = [
   {
-    school: 'Boise State University',
-    degree: 'Computer Information Systems',
+    title: 'Computer Information Systems',
+    subtitle: 'Boise State University',
     link: 'https://boisestate.edu',
     year: '2000 - 2001 (no degree)',
   },
 ];
-
-export default degrees;

@@ -5,6 +5,7 @@ import { SchemaGraph } from '@/components/Schema';
 import PageWrapper from '@/components/Template/PageWrapper';
 import { aboutMarkdown } from '@/data/about';
 import { createPageMetadata } from '@/lib/metadata';
+import YouTubeThumb from '@/components/Template/YouTubeThumb';
 import {
   breadcrumbNode,
   HOME_URL,

@@ -20,13 +20,12 @@ Ask me in person for other stories that I'm afraid to share with the internet.
 
 # I Like
 
-- [Track days (Sportbikes)](https://www.youtube.com/watch?v=70vUUoF3ie4).
+- [Track days](https://www.youtube.com/watch?v=70vUUoF3ie4).
 - [Skiing](https://www.youtube.com/watch?v=V8oZmw7POKM).
-- Mountain Biking.
 - [Road Biking](https://www.youtube.com/watch?v=x3k9fusy2zE).
+- Mountain Biking.
 - Space.
 - Summer.
-- [Books](https://www.goodreads.com/).
 
 # Travel / Geography
 

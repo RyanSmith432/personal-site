@@ -1,14 +1,15 @@
-import type { Course as CourseType } from '@/data/resume/courses';
+import { courses } from '@/data/resume/courses';
+
+type Course = (typeof courses)[number];
 
 interface CourseProps {
-  data: CourseType;
+  data: Course;
 }
 
 export default function Course({ data }: CourseProps) {
   return (
     <li className="course-container">
       <a href={data.link}>
-        <h4 className="course-number">{data.number}:</h4>
         <p className="course-name">{data.title}</p>
 
         {data.image && (
