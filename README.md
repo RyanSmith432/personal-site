@@ -1,4 +1,4 @@
-# Personal Website Template
+# This site is based on the personal-site template by Michael D’Angelo, licensed under the MIT License.
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/mldangelo/personal-site/node.js.yml?branch=main)](https://github.com/mldangelo/personal-site/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
