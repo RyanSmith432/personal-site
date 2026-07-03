@@ -10,6 +10,14 @@ export default function Course({ data }: CourseProps) {
       <a href={data.link}>
         <h4 className="course-number">{data.number}:</h4>
         <p className="course-name">{data.title}</p>
+
+        {data.image && (
+          <img
+            src={data.image}
+            alt={data.title}
+            className="course-image mx-auto"
+          />
+        )}
       </a>
     </li>
   );
