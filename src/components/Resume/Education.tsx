@@ -1,9 +1,7 @@
-import type { Degree as DegreeType } from '@/data/resume/degrees';
-
 import Degree from './Education/Degree';
 
 interface EducationProps {
-  data: DegreeType[];
+  data: any[];
 }
 
 export default function Education({ data }: EducationProps) {

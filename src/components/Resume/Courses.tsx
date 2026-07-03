@@ -1,12 +1,10 @@
-import type { Course as CourseType } from '@/data/resume/courses';
-
 import Course from './Courses/Course';
 
 interface CoursesProps {
-  data: CourseType[];
+  data: any[];
 }
 
-function getRows(courses: CourseType[]) {
+function getRows(courses: any[]) {
   return courses
     .sort((a, b) => {
       let ret = 0;
