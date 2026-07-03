@@ -4,7 +4,7 @@ I lead Engineering teams.
 
 Previously, I co-founded [TheQRTist.com](https://TheQRTist.com).
 
-In my spare time, I enjoy investing in people and ideas through a [small venture fund](https://skepticalinvestments.biz), focusing on projects with high social impact. If you think I can be helpful to you or your cause, or if you're interested in collaborating, feel free to get in touch.
+In my spare time, I enjoy focusing on projects with high operational impact. If you think I can be helpful to you or your cause, or if you're interested in collaborating, feel free to get in touch.
 
 # Some History
 
