@@ -13,6 +13,13 @@ export default function Experience({ data }: ExperienceProps) {
       <div className="title">
         <h3>Experience</h3>
       </div>
+      <a
+  href="/Ryan Smith Resume - 2026.pdf"
+  download
+  className="text-blue-600 underline hover:text-blue-800"
+>
+  Download Resume (PDF)
+</a>
       {data.map((job) => (
         <Job data={job} key={`${job.name}-${job.position}`} />
       ))}
