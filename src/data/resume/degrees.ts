@@ -10,7 +10,7 @@ const degrees: Degree[] = [
     school: 'Boise State University',
     degree: 'Computer Information Systems',
     link: 'https://boisestate.edu',
-    year: "2000 - 2001 (no degree)",
+    year: '2000 - 2001 (no degree)',
   },
 ];
 
