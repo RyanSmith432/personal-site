@@ -13,43 +13,38 @@ const skills: Skill[] = [
   // Languages
   {
     title: 'Python',
-    competency: 5,
+    competency: 3,
     category: ['Languages', 'ML Engineering'],
   },
   {
-    title: 'TypeScript',
-    competency: 5,
-    category: ['Languages', 'Web Development'],
-  },
-  {
     title: 'SQL',
-    competency: 4,
+    competency: 2,
     category: ['Languages', 'Databases'],
   },
   // AI & LLM
   {
     title: 'AI Agents',
-    competency: 5,
+    competency: 3,
     category: ['ML Engineering'],
   },
   {
     title: 'LLM Evaluation',
-    competency: 5,
+    competency: 3,
     category: ['ML Engineering'],
   },
   {
     title: 'AI Red-teaming',
-    competency: 5,
+    competency: 2,
     category: ['ML Engineering'],
   },
   {
     title: 'LLM APIs',
-    competency: 5,
+    competency: 3,
     category: ['ML Engineering'],
   },
   {
     title: 'RAG',
-    competency: 4,
+    competency: 3,
     category: ['ML Engineering'],
   },
   {
@@ -59,7 +54,7 @@ const skills: Skill[] = [
   },
   {
     title: 'Vector Databases',
-    competency: 4,
+    competency: 3,
     category: ['ML Engineering', 'Databases'],
   },
   {
@@ -74,35 +69,30 @@ const skills: Skill[] = [
   },
   // Web Development
   {
-    title: 'Node.js',
-    competency: 5,
-    category: ['Web Development'],
-  },
-  {
     title: 'FastAPI',
-    competency: 4,
+    competency: 2,
     category: ['Web Development'],
   },
   {
     title: 'Next.js',
-    competency: 3,
+    competency: 2,
     category: ['Web Development'],
   },
   // Databases
   {
     title: 'PostgreSQL',
-    competency: 4,
-    category: ['Databases'],
-  },
-  {
-    title: 'Redis',
-    competency: 3,
+    competency: 2,
     category: ['Databases'],
   },
   // Infrastructure
   {
     title: 'AWS',
-    competency: 4,
+    competency: 2,
+    category: ['Infrastructure'],
+  },
+  {
+    title: 'Azure',
+    competency: 2,
     category: ['Infrastructure'],
   },
   {
@@ -112,7 +102,7 @@ const skills: Skill[] = [
   },
   {
     title: 'Kubernetes',
-    competency: 3,
+    competency: 2,
     category: ['Infrastructure'],
   },
   {

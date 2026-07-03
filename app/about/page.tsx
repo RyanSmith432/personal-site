@@ -15,7 +15,7 @@ import {
 const ABOUT_URL = `${SITE_URL}/about/`;
 
 const ABOUT_DESCRIPTION =
-  "Learn about Michael D'Angelo - Member of the Technical Staff at OpenAI and builder across AI, security, and infrastructure.";
+  "Learn about Ryan Smith - Senior Infrastructure Engineer";
 
 export const metadata: Metadata = createPageMetadata({
   title: 'About',

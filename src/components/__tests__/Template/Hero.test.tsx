@@ -15,18 +15,18 @@ describe('Hero', () => {
     render(<Hero />);
 
     const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toHaveTextContent("Michael D'Angelo");
+    expect(heading).toHaveTextContent("Ryan Smith");
   });
 
   it('renders the tagline with OpenAI and promptfoo links', () => {
     render(<Hero />);
 
     const openAiLink = screen.getByRole('link', { name: /openai/i });
-    expect(openAiLink).toHaveAttribute('href', 'https://openai.com');
+    expect(openAiLink).toHaveAttribute('href', 'https://Trace3.com');
     expect(openAiLink).toHaveClass('hero-highlight');
 
     const promptfooLink = screen.getByRole('link', { name: /promptfoo/i });
-    expect(promptfooLink).toHaveAttribute('href', 'https://promptfoo.dev');
+    expect(promptfooLink).toHaveAttribute('href', 'https://TheQRTist.com');
     expect(promptfooLink).toHaveClass('hero-highlight');
   });
 

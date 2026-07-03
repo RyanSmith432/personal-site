@@ -99,7 +99,7 @@ describe('personNode', () => {
     const node = personNode();
     const image = node.image as Record<string, unknown>;
     expect(image['@type']).toBe('ImageObject');
-    expect(image.url).toBe(`${SITE_URL}/images/me.jpg`);
+    expect(image.url).toBe(`${SITE_URL}/images/me.png`);
     expect(image.width).toBe(SITE_IMAGE_DIMENSIONS.width);
     expect(image.height).toBe(SITE_IMAGE_DIMENSIONS.height);
     expect(Array.isArray(node.sameAs)).toBe(true);
@@ -200,7 +200,7 @@ describe('blogPostingNode', () => {
   it('uses an ImageObject mirroring the OG image with dimensions', () => {
     const image = blogPostingNode(mockPost).image as Record<string, unknown>;
     expect(image['@type']).toBe('ImageObject');
-    expect(image.url).toBe(`${SITE_URL}/images/me.jpg`);
+    expect(image.url).toBe(`${SITE_URL}/images/me.png`);
     expect(image.width).toBe(SITE_IMAGE_DIMENSIONS.width);
     expect(image.height).toBe(SITE_IMAGE_DIMENSIONS.height);
   });
