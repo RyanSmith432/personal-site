@@ -18,14 +18,14 @@ describe('Hero', () => {
     expect(heading).toHaveTextContent("Ryan Smith");
   });
 
-  it('renders the tagline with OpenAI and promptfoo links', () => {
+  it('renders the tagline with Trace3 and TheQRTist links', () => {
     render(<Hero />);
 
-    const openAiLink = screen.getByRole('link', { name: /openai/i });
+    const openAiLink = screen.getByRole('link', { name: /trace3/i });
     expect(openAiLink).toHaveAttribute('href', 'https://Trace3.com');
     expect(openAiLink).toHaveClass('hero-highlight');
 
-    const promptfooLink = screen.getByRole('link', { name: /promptfoo/i });
+    const promptfooLink = screen.getByRole('link', { name: /theqrtist/i });
     expect(promptfooLink).toHaveAttribute('href', 'https://TheQRTist.com');
     expect(promptfooLink).toHaveClass('hero-highlight');
   });
@@ -33,10 +33,10 @@ describe('Hero', () => {
   it('displays hero chips for credentials', () => {
     render(<Hero />);
 
-    expect(screen.getByText('YC Alum')).toBeInTheDocument();
-    expect(screen.getByText('Stanford ICME')).toBeInTheDocument();
+    expect(screen.getByText('26 Years IT Experience')).toBeInTheDocument();
+    expect(screen.getByText('GitLab CI/CD Certified Associate')).toBeInTheDocument();
     expect(
-      screen.getByText('Co-founded Arthena & Matroid'),
+      screen.getByText('Co-founded TheQRTist.com'),
     ).toBeInTheDocument();
   });
 

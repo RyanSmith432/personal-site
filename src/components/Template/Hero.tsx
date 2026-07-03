@@ -33,9 +33,9 @@ export default function Hero() {
         </p>
 
         <div className="hero-chips">
-          <span className="hero-chip">YC Alum</span>
-          <span className="hero-chip">Stanford ICME</span>
-          <span className="hero-chip">Co-founded Arthena & Matroid</span>
+          <span className="hero-chip">26 Years IT Experience</span>
+          <span className="hero-chip">GitLab CI/CD Certified Associate</span>
+          <span className="hero-chip">Co-founded TheQRTist.com</span>
         </div>
 
         <div className="hero-cta">
