@@ -42,3 +42,15 @@
 
 /* Theme Overrides */
 @import './styles/dark-mode.css';
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0px rgba(0, 150, 255, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(0, 150, 255, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(0, 150, 255, 0.0);
+  }
+}
