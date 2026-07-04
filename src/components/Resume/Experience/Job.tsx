@@ -15,10 +15,9 @@ export default function Job({ data }: JobProps) {
     <article className="jobs-container">
       <header>
         <h4>
-          <a href={url}>{name}</a> - {position}
+          <a href={url}>{name}</a> - <span className="work-position">{position}</span>
         </h4>
         <p className="daterange">
-          {' '}
           <time dateTime={startDate}>
             {dayjs(startDate).format('MMMM YYYY')}
           </time>{' '}
@@ -30,7 +29,9 @@ export default function Job({ data }: JobProps) {
           )}
         </p>
       </header>
+
       {summary ? <JobSummary summary={summary} /> : null}
+
       {highlights ? (
         <ul className="points">
           {highlights.map((highlight) => (

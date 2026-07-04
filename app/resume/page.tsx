@@ -26,7 +26,9 @@ export default function ResumePage() {
         <header className="resume-header">
           <h1 className="resume-title">Resume</h1>
           <p className="resume-summary">
-            Engineering & IT Operations leader with....
+            Senior Infrastructure Engineer with 26+ years of experience designing and managing enterprise IT environments.
+          <br />
+            Co‑founded a generative‑AI startup TheQRTist.com, where I designed and maintained the entire GenAI toolchain & Image generation process.
           </p>
         </header>
 

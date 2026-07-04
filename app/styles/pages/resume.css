@@ -283,3 +283,14 @@
 .about-page .youtube-thumb:hover img {
   transform: scale(1.03);
 }
+/* ========================================
+   Work Experience — Position Styling
+   ======================================== */
+
+.resume-page .work-position {
+  background: linear-gradient(90deg, var(--color-accent), #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: var(--font-weight-bold);
+}
