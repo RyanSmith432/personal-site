@@ -79,7 +79,7 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'Capital Group - PURE & VMMware Replicated Datastores',
+    title: 'Capital Group - PURE & VMware Replicated Datastores',
     subtitle: 'Creating and managing PURE and VMware replicated datastores for high availability and disaster recovery.',
     images: [
       '/images/projects/PURE_VMware_How-to-create-replicated-datastores.webp',
