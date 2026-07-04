@@ -9,20 +9,23 @@ interface CellProps {
 }
 
 export default function Cell({ data }: CellProps) {
-  const { title, subtitle, link, image, date, desc, tech, featured } = data;
+  const { title, subtitle, link, images, date, desc, tech, featured } = data;
 
   const hasLink = Boolean(link);
 
   const cardContent = (
     <>
       <div className="project-card-image">
-        <Image
-          src={image}
-          alt={title}
-          width={PROJECT_IMAGE.width}
-          height={PROJECT_IMAGE.height}
-          sizes="(max-width: 600px) 100vw, 50vw"
-        />
+        {images?.[0] && (
+          <Image
+            src={images[0]}               // ⭐ FIX: use first image, not array
+            alt={title}
+            width={PROJECT_IMAGE.width}
+            height={PROJECT_IMAGE.height}
+            sizes="(max-width: 600px) 100vw, 50vw"
+            className="object-cover rounded-lg"
+          />
+        )}
       </div>
 
       <div className="project-card-content">
@@ -52,7 +55,9 @@ export default function Cell({ data }: CellProps) {
 
   return (
     <article
-      className={`project-card ${featured ? 'project-card--featured' : ''} ${hasLink ? 'project-card--linked' : 'project-card--static'}`}
+      className={`project-card ${
+        featured ? 'project-card--featured' : ''
+      } ${hasLink ? 'project-card--linked' : 'project-card--static'}`}
     >
       {hasLink ? (
         <a href={link} className="project-card-link">
