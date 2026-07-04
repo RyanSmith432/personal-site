@@ -13,4 +13,10 @@ export const courses: EducationItem[] = [
     link: '/MCP_Cert.pdf',
     image: '/images/courses/mcp.webp',
   },
+  {
+    title: 'MicronPC Internship',
+    subtitle: 'Trained to build PCs and Notebooks at MicronPCs assembly line. Know all hardware and their functions. Taught Burn-in and QA processes.',
+    year: '1998',
+    link: '',
+  },
 ];
