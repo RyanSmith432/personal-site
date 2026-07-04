@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import Cell from '@/components/Projects/Cell';
+import ProjectsGrid from '@/components/Projects/ProjectsGrid';
 import { SchemaGraph } from '@/components/Schema';
 import PageWrapper from '@/components/Template/PageWrapper';
 import data from '@/data/projects';
@@ -15,7 +15,7 @@ import {
 const PROJECTS_URL = `${SITE_URL}/projects/`;
 
 const PROJECTS_DESCRIPTION =
-  "Early projects and experiments from Ryan Smith (2015 and earlier).";
+  'Early projects and experiments from Ryan Smith (2015 and earlier).';
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Archive',
@@ -43,35 +43,17 @@ export default function ProjectsPage() {
           ]),
         ]}
       />
+
       <section className="projects-page">
         <header className="projects-header">
           <h1 className="page-title">Archive</h1>
-          <p className="page-subtitle">
-            Early projects and experiments
-          </p>
+          <p className="page-subtitle">Early projects and experiments</p>
         </header>
 
-        {featuredProjects.length > 0 && (
-          <section className="projects-featured">
-            <h2 className="projects-section-title">Projects &amp; Documentation</h2>
-            <div className="projects-grid projects-grid--featured">
-              {featuredProjects.map((project) => (
-                <Cell data={project} key={project.title} />
-              ))}
-            </div>
-          </section>
-        )}
-
-        {otherProjects.length > 0 && (
-          <section className="projects-other">
-            <h2 className="projects-section-title">Side Projects</h2>
-            <div className="projects-grid">
-              {otherProjects.map((project) => (
-                <Cell data={project} key={project.title} />
-              ))}
-            </div>
-          </section>
-        )}
+        <ProjectsGrid
+          featuredProjects={featuredProjects}
+          otherProjects={otherProjects}
+        />
       </section>
     </PageWrapper>
   );

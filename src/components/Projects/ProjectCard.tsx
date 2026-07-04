@@ -7,11 +7,28 @@ import type { Project } from '@/data/projects';
 export default function ProjectCard({ project }: { project: Project }) {
   const [open, setOpen] = useState(false);
 
+  const handleClick = () => {
+    if (project.link) {
+      window.open(project.link, '_blank');
+    } else {
+      setOpen(true);
+    }
+  };
+
   return (
     <>
       <div
-        className="project-card cursor-pointer border rounded-lg p-4 shadow-sm hover:shadow-md transition"
-        onClick={() => setOpen(true)}
+        onClick={handleClick}
+        className="
+          group cursor-pointer
+          border rounded-lg p-4
+          shadow-sm
+          transition-all duration-300
+          hover:scale-[1.03]
+          hover:-translate-y-1
+          hover:shadow-xl
+          hover:border-blue-400
+        "
       >
         {project.images?.[0] && (
           <img
@@ -27,7 +44,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <p className="mt-2">{project.desc}</p>
       </div>
 
-      {open && (
+      {open && !project.link && (
         <CarouselModal
           images={project.images}
           onClose={() => setOpen(false)}

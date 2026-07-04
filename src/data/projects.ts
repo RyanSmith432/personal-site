@@ -13,7 +13,9 @@ const data: Project[] = [
   {
     title: 'Capital Group ESXi',
     subtitle: 'ESXi v7 to v8 Upgrade',
-    images: ['/images/projects/VMware_ESXi_v7_v8.webp'],
+    images: [
+      '/images/projects/VMware_ESXi_v7_v8.webp'
+    ],
     date: '2024-10-15',
     desc: 'Upgraded ESXi hosts from v7 to v8, ensuring compatibility with the latest features and security updates.',
     tech: ['VMware ESXi', 'vSphere', 'PowerCLI'],
