@@ -120,6 +120,21 @@ const work: Position[] = [
       'Authored SOPs, runbooks, and how‑to guides aligned with ITIL‑based operational processes, improving consistency across Admin and Helpdesk teams.',
     ],
   },
+  {
+    name: 'HP',
+    position: 'Senior Storage & Systems Engineer',
+    url: 'https://hp.com/',
+    startDate: '2010-08-01',
+    endDate: '2011-08-01',
+    summary: `Senior Storage & Systems Engineer at HP. Member of Engineering team responsible for building and maintaining HP’s 1st enterprise lab environments on VMware ESXi 3.5–4.1.`,
+    highlights: [
+        'Lead Architect on data center build with 100+ HP C-Class blades and EVA SAN storage for VMware ESXi 3.5–4.1.',
+        'Configured clustering, failover, and vMotion across enterprise lab environments.',
+        'Migrated 700 VMs and virtualized 300 physical servers to new data center infrastructure.',
+        'Conducted infrastructure audits for HP’s largest clients, replicating environments for testing and validation.',
+        'Supported lab environments scaled for 10,000+ active users per client, testing printer driver updates and system performance.',
+    ],
+  },
 ];
 
 export default work;
