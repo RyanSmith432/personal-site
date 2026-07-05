@@ -11,11 +11,13 @@ export interface Project {
 
 const data: Project[] = [
   {
-    title: 'Capital Group - ESXi & VCSA',
-    subtitle: 'Upgrade ESXi v7 to v8 and VCSA v7 to v8',
+    title: 'Capital Group - Upgrade ESXi & VCSA',
+    subtitle: 'Upgrade ESXi v7 to v8 and VCSA v7 to v8 for 1300+ hosts. As well as configure VCSA backups and certificate renewals.',
     images: [
       '/images/projects/VMware_ESXi_v7_v8.webp',
-      '/images/projects/VMware_VCSA_v7_v8.webp'
+      '/images/projects/VMware_VCSA_v7_v8.webp',
+      '/images/projects/VMware_VCSA_Backups.webp',
+      '/images/projects/VMware_VCSA_Cert.webp'
     ],
     date: '2022-10-15',
     desc: 'Upgraded 1300+ ESXi hosts from v7 to v8, & VCSA servers from v7 to v8, ensuring compatibility with the latest features and security updates.',
@@ -33,8 +35,8 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'Capital Group - vRA',
-    subtitle: 'vRA Cloud too On-Prem Migration',
+    title: 'Capital Group - vRA migration & upagrade',
+    subtitle: 'vRA Cloud too On-Prem Migration & Upgrade to latest vRA / vRO versions.',
     images: [
       '/images/projects/vRA_Cloud-to-On-Prem_01.webp',
       '/images/projects/vRA_Cloud-to-On-Prem_02.webp'
@@ -87,6 +89,28 @@ const data: Project[] = [
     date: '2024-10-15',
     desc: 'Managed the process documentation and configuration of PURE and VMware replicated datastores for high availability and disaster recovery.',
     tech: ['PURE', 'VMware', 'vSphere', 'vSAN', 'Disaster Recovery', 'High Availability'],
+    featured: true,
+  },
+  {
+    title: 'Capital Group - NetApp LDAPS (secure LDAP) Configuration Standardization',
+    subtitle: 'Creating and managing PURE and VMware replicated datastores for high availability and disaster recovery.',
+    images: [
+      '/images/projects/NetApp_How-To_Enable_LDAPS_ONTAP.webp',
+    ],
+    date: '2025-12-06',
+    desc: 'Managed configuration change and LDAPS standardization across the organization, ensuring secure and compliant LDAP implementations.',
+    tech: ['NetApp ONTAP', 'LDAPS', 'Security'],
+    featured: true,
+  },
+  {
+    title: 'Capital Group - NetApp BlueXP Deployment & File Auditing',
+    subtitle: 'Deployment of NetApp BlueXP for file auditing & reporting.',
+    images: [
+      '/images/projects/NetApp_BlueXP_How-To_Deploy_BlueXP.webp',
+    ],
+    date: '2024-12-19',
+    desc: 'Lead the deployment of NetApp BlueXP. As part of a larger initiative to delete unused files and reduce storage costs ahead of a data Migration project.',
+    tech: ['NetApp ONTAP', 'NetApp BlueXP', 'Security'],
     featured: true,
   },
 ];
