@@ -11,7 +11,7 @@ export const courses: EducationItem[] = [
     title: 'Microsoft Certified Professional',
     subtitle: 'Microsoft',
     link: '/MCP_Cert.pdf',
-    image: '/images/courses/mcp.webp',
+    image: '/images/courses/mcp_wh_glow.webp',
   },
   {
     title: 'MicronPC Internship',
