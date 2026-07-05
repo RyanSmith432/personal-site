@@ -1,10 +1,10 @@
 export const aboutMarkdown = `# Intro
 
-I lead Engineering teams.
+I lead IT Engineering Support Services teams, comprising the technical and operational backbone for complex infrastructure projects. I help bridge the gap between design and daily execution, providing multidisciplinary expertise to optimize processes, ensure regulatory compliance, and drive operational efficiency.
 
-Previously, I co-founded [TheQRTist.com](https://TheQRTist.com).
+Previously, I co-founded [TheQRTist.com](https://TheQRTist.com), where I owned company-wide technical strategy and product roadmap across open-source adoption, commercial product, and research investments.
 
-In my spare time, I enjoy focusing on projects with high operational impact. If you think I can be helpful to you or your cause, or if you're interested in collaborating, feel free to get in touch.
+In my spare time, I enjoy focusing on my family, learning and personal growth.
 
 # Some History
 
@@ -12,14 +12,13 @@ In my spare time, I enjoy focusing on projects with high operational impact. If 
 - At 14, My parents subscribed to America Online (later AOL).
 - At 17, I started an internship at MicronPC, where I learned to build computers and troubleshoot hardware issues.
 - At 19, I owned and operated a computer repair business, which I ran for 3 years.
-- At 22, I became a father of one Son.
+- At 22, I have my 1st child.
 - At 30, I bought my first house in Boise, Idaho.
 - At 37, I married my wife, who is the most amazing person I have ever met.
-- At 38, I became a father of my 1st Daughter & 2nd child.
-- At 41, I became a father of my 2nd Daughter & 3rd child.
-- At 43, I became a father of my 2nd Son & 4th child.
+- At 38, I had my 1st Daughter & 2nd child.
+- At 41, I had my 2nd Daughter & 3rd child.
+- At 43, I had my 2nd Son & 4th child.
 
-Ask me in person for other stories that I'm afraid to share with the internet.
 
 # I Like
 
@@ -28,6 +27,7 @@ Ask me in person for other stories that I'm afraid to share with the internet.
 - [Road Biking](https://www.youtube.com/watch?v=x3k9fusy2zE).
 - Mountain Biking.
 - Space.
+- Hiking.
 - Summer.
 
 # Travel / Geography
@@ -39,6 +39,7 @@ Ask me in person for other stories that I'm afraid to share with the internet.
 # I Dream Of
 
 - The Mechanics of Piezoelectricity & Triboluminescence on Quartz.
+
 
 # Websites from People I Admire
 
