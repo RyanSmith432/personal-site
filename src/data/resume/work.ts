@@ -71,7 +71,7 @@ const work: Position[] = [
     name: 'WinCo Foods',
     position: 'Senior Systems Engineer',
     url: 'https://wincofoods.com',
-    startDate: '2014-01-01',
+    startDate: '2014-11-01',
     endDate: '2021-09-01',
     summary: `Lead Engineer for Release Management for BIOS and Firmware upgrades. ESXi hosts & vCenter Servers upgrades. Exchange & SCCM moderization. OS hardening and security compliance.`,
     highlights: [
@@ -124,7 +124,7 @@ const work: Position[] = [
     name: 'HP',
     position: 'Senior Storage & Systems Engineer',
     url: 'https://hp.com/',
-    startDate: '2010-08-01',
+    startDate: '2010-01-01',
     endDate: '2011-08-01',
     summary: `Senior Storage & Systems Engineer at HP. Member of Engineering team responsible for building and maintaining HP’s 1st enterprise lab environments on VMware ESXi 3.5–4.1.`,
     highlights: [
