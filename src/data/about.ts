@@ -8,12 +8,16 @@ In my spare time, I enjoy focusing on my family, learning and personal growth.
 
 # Some History
 
+- At 12, My dad bought me a 1993 YZ80 and I started racing Motocross. I had learned to ride on a Kawasaki 175 trail bike.
 - At 13, My parents bought our first computer. I believe it had Windows 3.1. I had to click on everything to figure out how to use it.
 - At 14, My parents subscribed to America Online (later AOL).
 - At 17, I started an internship at MicronPC, where I learned to build computers and troubleshoot hardware issues.
 - At 19, I owned and operated a computer repair business, which I ran for 3 years.
 - At 22, I have my 1st child.
+- At 23, I started riding / racing Sportbikes at the Track.
 - At 30, I bought my first house in Boise, Idaho.
+- At 31, I was building & tuning my own Race / Track bikes. Using a combination of a piggyback autotuner and ECU Flashing hardware/software.
+- At 32, I modded a BMW 335XI, AWD, 3.0L Twin Turbo with full bolt-ons, methanol injection, and E85 fuel. It ran 12's at Boise, ID's elevation.
 - At 37, I married my wife, who is the most amazing person I have ever met.
 - At 38, I had my 1st Daughter & 2nd child.
 - At 41, I had my 2nd Daughter & 3rd child.
@@ -29,6 +33,7 @@ In my spare time, I enjoy focusing on my family, learning and personal growth.
 - Space.
 - Hiking.
 - Summer.
+- Video Production & Editing.
 
 # Travel / Geography
 

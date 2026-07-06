@@ -35,7 +35,7 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'vRA Migration & Upagrade',
+    title: 'vRA Migration & Upgrade',
     subtitle: 'vRA Cloud too On-Prem Migration & Upgrade to latest vRA / vRO versions.',
     images: [
       '/images/projects/vRA_Cloud-to-On-Prem_01.webp',
@@ -44,6 +44,18 @@ const data: Project[] = [
     date: '2025-10-15',
     desc: 'Migrated vRA Cloud workloads to on-premises infrastructure, ensuring seamless transition and minimal downtime. Then upgraded to the latest vRA / vRO versions.',
     tech: ['VMware vRA', 'VMware vRO', 'vSphere', 'PowerCLI', 'Confluence'],
+    featured: true,
+  },
+  {
+    title: 'Scripts to Report & Correct ESXi host drift',
+    subtitle: 'PowerCLI scripts used to generate find & correct configuration drift on 1300+ ESXi hosts.',
+    images: [
+      '/images/projects/script_examples_reports.webp',
+      '/images/projects/script_examples_set.webp'
+    ],
+    date: '2023-10-15',
+    desc: 'I created PowerCLI scripts to generate Reports on configuration drift & to set the correct values on misconfigured hosts for 1300+ ESXi hosts.',
+    tech: ['VMware', 'vSphere', 'PowerCLI', 'Confluence'],
     featured: true,
   },
     {
