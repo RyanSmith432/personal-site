@@ -11,7 +11,7 @@ export interface Project {
 
 const data: Project[] = [
   {
-    title: 'Capital Group - Upgrade ESXi & VCSA',
+    title: 'ESXi & VCSA Upgrades for 1300+ Hosts',
     subtitle: 'Upgrade ESXi v7 to v8 and VCSA v7 to v8 for 1300+ hosts. As well as configure VCSA backups and certificate renewals.',
     images: [
       '/images/projects/VMware_ESXi_v7_v8.webp',
@@ -25,8 +25,8 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'The QRTist',
-    subtitle: 'AI-powered Art Generation',
+    title: 'The QRTist Gen-AI',
+    subtitle: 'AI-powered Art Generation for Scannable QR Code Artwork',
     link: 'https://TheQRTist.com',
     images: ['/images/projects/PayPal-Sushi.webp'],
     date: '2025-05-10',
@@ -35,7 +35,7 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'Capital Group - vRA migration & upagrade',
+    title: 'vRA Migration & Upagrade',
     subtitle: 'vRA Cloud too On-Prem Migration & Upgrade to latest vRA / vRO versions.',
     images: [
       '/images/projects/vRA_Cloud-to-On-Prem_01.webp',
@@ -47,7 +47,7 @@ const data: Project[] = [
     featured: true,
   },
     {
-    title: 'Capital Group - Dell BIOS & OME',
+    title: 'Dell BIOS & OME upgrades for 1300+ Servers',
     subtitle: 'Upgrade Dell BIOS and OME servers to latest versions',
     images: [
       '/images/projects/Dell_BIOS_Upgrade.webp',
@@ -59,8 +59,8 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'Capital Group - Image Management',
-    subtitle: 'Image Mangement and Deployment for Windows and Linux images.',
+    title: 'Image Management',
+    subtitle: 'Image Management and Deployments for Windows and Linux images including documentation.',
     images: [
       '/images/projects/Image_Creation_Process.webp',
     ],
@@ -70,7 +70,7 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'UTIMCO - Intune Vulnerability Remediation',
+    title: 'Intune Vulnerability Remediation',
     subtitle: 'Deployed AD CS ESC1 & ESC8 Remediation',
     images: [
       '/images/projects/InTune - How-To_ AD CS ESC1 & ESC8 Remediation_v0.9.png',
@@ -81,7 +81,7 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'Capital Group - PURE & VMware Replicated Datastores',
+    title: 'PURE & VMware Replicated Datastores',
     subtitle: 'Creating and managing PURE and VMware replicated datastores for high availability and disaster recovery.',
     images: [
       '/images/projects/PURE_VMware_How-to-create-replicated-datastores.webp',
@@ -92,7 +92,7 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'Capital Group - NetApp LDAPS (secure LDAP) Configuration Standardization',
+    title: 'NetApp LDAPS (secure LDAP) Configuration Standardization',
     subtitle: 'Creating and managing PURE and VMware replicated datastores for high availability and disaster recovery.',
     images: [
       '/images/projects/NetApp_How-To_Enable_LDAPS_ONTAP.webp',
@@ -103,7 +103,7 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'Capital Group - NetApp BlueXP Deployment & File Auditing',
+    title: 'NetApp BlueXP Deployment & File Auditing',
     subtitle: 'Deployment of NetApp BlueXP for file auditing & reporting.',
     images: [
       '/images/projects/NetApp_BlueXP_How-To_Deploy_BlueXP.webp',
