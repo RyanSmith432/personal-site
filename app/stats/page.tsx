@@ -22,11 +22,11 @@ export default function StatsPage() {
         </header>
         <div className="stats-content">
           <section>
-            <h2 className="stats-section-title">About me</h2>
+            <h2 className="stats-section-title">About me:</h2>
             <Personal />
           </section>
           <section>
-            <h2 className="stats-section-title">This site</h2>
+            <h2 className="stats-section-title">Stats on the Repo this site is forked from:</h2>
             <Site />
           </section>
         </div>
