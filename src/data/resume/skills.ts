@@ -14,7 +14,6 @@ const skills: Skill[] = [
   // Existing Skills
   // -----------------------------
   { title: 'Python', competency: 3, category: ['Languages', 'ML Engineering'] },
-  { title: 'SQL', competency: 2, category: ['Languages', 'Databases'] },
   { title: 'PowerCLI', competency: 3, category: ['Languages', 'ML Engineering'] },
 
   // AI & LLM
