@@ -14,7 +14,6 @@ const skills: Skill[] = [
   // Existing Skills (unchanged)
   // -----------------------------
   { title: 'Python', competency: 3, category: ['Languages', 'ML Engineering'] },
-  { title: 'SQL', competency: 2, category: ['Languages', 'Databases'] },
   { title: 'PowerCLI', competency: 3, category: ['Languages', 'ML Engineering'] },
 
   // AI & LLM
@@ -87,7 +86,7 @@ const skills: Skill[] = [
   // Storage Platforms
   { title: 'PURE Storage', competency: 0, category: ['Storage', 'Infrastructure'] },
   { title: 'NetApp ONTAP', competency: 0, category: ['Storage', 'Infrastructure'] },
-  { title: 'NetApp BlueXP', competency: 0, category: ['Storage', 'Security'] },
+  { title: 'NetApp BlueXP', competency: 0, category: ['Storage'] },
 
   // Security / LDAP / DR
   { title: 'LDAPS', competency: 0, category: ['Security'] },
