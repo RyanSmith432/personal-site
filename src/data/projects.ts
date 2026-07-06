@@ -21,7 +21,7 @@ const data: Project[] = [
     ],
     date: '2022-10-15',
     desc: 'Upgraded 1300+ ESXi hosts from v7 to v8, & VCSA servers from v7 to v8, ensuring compatibility with the latest features and security updates.',
-    tech: ['VMware ESXi', 'vSphere', 'PowerCLI'],
+    tech: ['VMware ESXi', 'vSphere', 'PowerCLI', 'Confluence'],
     featured: true,
   },
   {
@@ -31,7 +31,7 @@ const data: Project[] = [
     images: ['/images/projects/PayPal-Sushi.webp'],
     date: '2025-05-10',
     desc: 'Developed an AI-powered art generation platform that creates unique scannable QR Code artwork.',
-    tech: ['Python', 'TensorFlow', 'Stable Diffusion', 'ComfyUI', 'Docker containers', 'Hugging Face'],
+    tech: ['Python', 'TensorFlow', 'Stable Diffusion', 'ComfyUI', 'Docker containers', 'Hugging Face', 'Nvidia GPU'],
     featured: true,
   },
   {
@@ -43,7 +43,7 @@ const data: Project[] = [
     ],
     date: '2025-10-15',
     desc: 'Migrated vRA Cloud workloads to on-premises infrastructure, ensuring seamless transition and minimal downtime. Then upgraded to the latest vRA / vRO versions.',
-    tech: ['VMware vRA', 'VMware vRO', 'vSphere', 'PowerCLI'],
+    tech: ['VMware vRA', 'VMware vRO', 'vSphere', 'PowerCLI', 'Confluence'],
     featured: true,
   },
     {
@@ -55,7 +55,7 @@ const data: Project[] = [
     ],
     date: '2024-10-15',
     desc: 'Upgraded the BIOS of 1300+ Dell Servers and their related OME servers to the latest versions, ensuring improved system stability, security, and performance.',
-    tech: ['Dell OME', 'BIOS Upgrades', 'Firmware Upgrades', 'PowerCLI'],
+    tech: ['Dell OME', 'BIOS Upgrades', 'Firmware Upgrades', 'Splunk', 'Confluence'],
     featured: true,
   },
   {
@@ -66,7 +66,7 @@ const data: Project[] = [
     ],
     date: '2026-10-15',
     desc: 'On a team of Engineers, who managed the deployment of Windows and Linux images for a large enterprise, ensuring consistent and efficient system setups across the organization.',
-    tech: ['Ansible', 'CI/CD', 'IaC', '.hcl', 'Packer', 'Terraform', 'Group Policy', 'Tanium'],
+    tech: ['Ansible', 'CI/CD', 'IaC', '.hcl', 'Packer', 'Terraform', 'Group Policy', 'Tanium', 'ServiceNow CMDB', 'Nexus Repositories'],
     featured: true,
   },
   {
