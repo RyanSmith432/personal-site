@@ -23,7 +23,7 @@ export default function Hero() {
           <a href="https://capitalgroup.com" className="hero-highlight">
             Capital Groups {' '}
           </a>
-           Infrastructure.
+           Infrastructure, OS Hardening and Security Compliance.
           <br />
           Previously co-founded and scaled {' '}
           <a href="https://TheQRTist.com" className="hero-highlight">
