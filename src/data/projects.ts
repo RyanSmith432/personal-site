@@ -153,7 +153,7 @@ const data: Project[] = [
     featured: true,
   },
   {
-    title: 'UCS Fibric Interconnect port Enable/Disable How-To',
+    title: 'UCS Fabric Interconnect port Enable / Disable How-To',
     subtitle: 'Create a How-To for junior Engineers',
     images: [
       '/images/projects/UCS_FI_Port_Enable_or_Disable.webp',
