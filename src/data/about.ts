@@ -30,6 +30,7 @@ In my spare time, I enjoy focusing on my family, learning and personal growth.
 - [Skiing](https://www.youtube.com/watch?v=V8oZmw7POKM).
 - [Road Biking](https://www.youtube.com/watch?v=x3k9fusy2zE).
 - Mountain Biking.
+- Sim Racing.
 - Space.
 - Hiking.
 - Summer.
