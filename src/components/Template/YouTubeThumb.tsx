@@ -3,11 +3,9 @@ import React from "react";
 export default function YouTubeThumb({
   id,
   title,
-  duration = "3:12", // optional, you can remove or pass real durations
 }: {
   id: string;
   title: string;
-  duration?: string;
 }) {
   return (
     <a
@@ -60,20 +58,6 @@ export default function YouTubeThumb({
             <path d="M8 5v14l11-7z" />
           </svg>
         </div>
-      </div>
-
-      {/* Duration Tag (YouTube-style) */}
-      <div
-        className="
-          absolute bottom-2 right-2
-          bg-black/70
-          text-white text-xs
-          px-2 py-0.5
-          rounded
-          pointer-events-none
-        "
-      >
-        {duration}
       </div>
 
       {/* Title */}
